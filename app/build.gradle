@@ -41,4 +41,9 @@ dependencies {
      * Animation Library
      */
     implementation "com.airbnb.android:lottie:3.0.1"
+
+    /**
+     * Google Vision
+     */
+    implementation "com.google.android.gms:play-services-vision:18.0.0"
 }

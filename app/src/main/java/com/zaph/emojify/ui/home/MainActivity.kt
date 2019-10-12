@@ -18,6 +18,7 @@ import java.io.File
 import com.zaph.emojify.utils.BitmapUtils
 import java.io.IOException
 import androidx.core.content.FileProvider
+import com.zaph.emojify.ui.emojify.Emojifier
 import com.zaph.emojify.utils.FILE_PROVIDER_AUTHORITY
 import com.zaph.emojify.utils.REQUEST_IMAGE_CAPTURE
 
@@ -168,6 +169,8 @@ class MainActivity : BaseActivity() , View.OnClickListener{
 
         // Resample the saved image to fit the ImageView
         mResultsBitmap = BitmapUtils.resamplePic(this,mTempPhotoPath!!)
+
+        Emojifier.detectFaces(this,mResultsBitmap!!)
         // Set the new bitmap to the ImageView
         ivEmojify.setImageBitmap(mResultsBitmap)
     }
