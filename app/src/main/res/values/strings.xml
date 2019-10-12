@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Emojify</string>
+    <string name="error_delete">Error While Deleting</string>
+    <string name="saved_message">Image Saved Successfully</string>
+</resources>
