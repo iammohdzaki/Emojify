@@ -19,4 +19,5 @@ interface BaseView {
     fun showSnackbar(message: String)
 
     fun showSnackbar(message: String,snackbarStatus:Int)
+
 }

@@ -170,7 +170,7 @@ class MainActivity : BaseActivity() , View.OnClickListener{
         // Resample the saved image to fit the ImageView
         mResultsBitmap = BitmapUtils.resamplePic(this,mTempPhotoPath!!)
 
-        Emojifier.detectFaces(this,mResultsBitmap!!)
+        mResultsBitmap=Emojifier.detectFacesAndOverlayEmoji(this,mResultsBitmap!!)
         // Set the new bitmap to the ImageView
         ivEmojify.setImageBitmap(mResultsBitmap)
     }
